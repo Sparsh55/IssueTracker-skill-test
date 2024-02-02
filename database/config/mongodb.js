@@ -1,5 +1,6 @@
 const MongoClient = require("mongodb").MongoClient;
-const url = "mongodb:/localhost:27017/issuetracker";
+const url =
+  "mongodb+srv://sparshsaxena9654:sparsh@cluster0.p7ccisx.mongodb.net/?retryWrites=true&w=majority";
 
 async function getEmpData() {
   let client = await MongoClient.connect(url);
