@@ -1,10 +1,10 @@
-const MongoClient = require('mongodb').MongoClient;
-const url = 'mongodb://127.0.0.1:27017/issuetracker'
+const MongoClient = require("mongodb").MongoClient;
+const url = "mongodb:/localhost:27017/issuetracker";
 
 async function getEmpData() {
-    let client = await MongoClient.connect(url);
-    let connection = client.db('issueTracker'); // Establish connection
-    return connection.collection('IssueTracker2023'); // creating a collection and naming it also
+  let client = await MongoClient.connect(url);
+  let connection = client.db("issueTracker"); // Establish connection
+  return connection.collection("IssueTracker2023"); // creating a collection and naming it also
 }
 
 module.exports = getEmpData;
